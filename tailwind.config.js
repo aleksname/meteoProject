@@ -5,6 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    extend: {
+      spacing: {
+        0.5: '4px' // приклад як задади потрібні паддінги ітд
+      },
+      
+    },
     screens: {
       'sm': '576px',
       // => @media (min-width: 576px) { ... }

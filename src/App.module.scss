@@ -1,16 +1,24 @@
 .wrapper{
-    @apply flex justify-center
 }
+.parent {
+  position: fixed; /* Зробити позиціонування абсолютним */
+  top: 50%; /* Позиціонувати по верхній межі на 50% */
+  left: 50%; /* Позиціонувати по лівому краю на 50% */
+  transform: translate(-50%, -50%); /* Перемістити назад на 50% розміру елемента */
+  height: fit-content; /* Зайняти висоту вмісту */
+}
+
 .parent{
-    @apply w-full bg-opacity-60  h-auto pb-6 mt-6 px-10 shadow-xl 
+    @apply w-full bg-opacity-60  h-auto py-8 mt-6 px-10 shadow-xl  max-w-xl h-auto
 }
 .heading{
     @apply text-red-500 flex justify-center text-2xl border-b border-t mb-6 pb-2 rounded-lg 
 
 }
 .input{
-    @apply bg-slate-300 w-full py-2 mb-1 rounded-lg flex pl-2
+    @apply bg-slate-300 w-full py-3 mb-2 rounded-lg flex pl-2 placeholder:text-slate-500 outline-none font-medium text-slate-800 
 }
 .btn{
-     @apply bg-blue-200 px-10 py-2 mt-4 hover:bg-blue-300 active:bg-blue-400 rounded-lg w-full transition-colors
+     @apply bg-blue-200 px-10 py-2 mt-4 hover:bg-blue-300 active:bg-blue-400 rounded-lg w-full transition-colors font-medium active:font-bold
 }
+
