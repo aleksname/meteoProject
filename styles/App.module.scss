@@ -59,7 +59,7 @@
 }
 
 .infoWeatherBlock{
-  @apply bg-white max-w-lg rounded-xl h-auto 
+  @apply bg-white w-auto rounded-xl h-auto 
 }
 .weatherCards{
   @apply  h-auto flex flex-wrap;
@@ -72,7 +72,7 @@
   @apply block ;
 }
 .icons{
-  @apply text-black
+  @apply text-black text-2xl 
 }
 
 .cardsWind{

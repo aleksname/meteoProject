@@ -6,6 +6,7 @@ import SliderWeatherCard from './components/SliderWeatherCard/SliderWeatherCard'
 import MainContainter from './components/MainContainter';
 import SponsoredNews from './components/SponsoredNews/SponsoredNews';
 import Footer from './components/Footer/Footer';
+import GetApiData from './components/GetApiData/GetApiData'
 
 export default function Page({titels}) {
   return(
@@ -15,9 +16,10 @@ export default function Page({titels}) {
             {/* <Header/> */}
             <Main />
             <SliderWeatherCard />
-          <SponsoredNews />
-          <Footer/>
-          </div>
+            <SponsoredNews />
+            <Footer />
+            <GetApiData/>  
+        </div>
       </MainContainter>
       </>
   )
