@@ -1,11 +1,12 @@
 // file: index.jsx
 // import styles from '../../../styles/App.module.scss'
 import '../styles/App.module.scss'
-import Header from './components/Header/Header'
 import Main from './components/Main/MainPage'
 import SliderWeatherCard from './components/SliderWeatherCard/SliderWeatherCard';
 import MainContainter from './components/MainContainter';
-import WeatherCard from './components/SliderWeatherCard/WeatherCard';
+import SponsoredNews from './components/SponsoredNews/SponsoredNews';
+import Footer from './components/Footer/Footer';
+import GetApiData from './components/GetApiData/GetApiData'
 
 export default function Page({titels}) {
   return(
@@ -14,8 +15,11 @@ export default function Page({titels}) {
           <div className="wrapper">
             {/* <Header/> */}
             <Main />
-          <SliderWeatherCard />
-          </div>
+            <SliderWeatherCard />
+            <SponsoredNews />
+            <Footer />
+            <GetApiData/>  
+        </div>
       </MainContainter>
       </>
   )

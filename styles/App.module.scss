@@ -59,7 +59,7 @@
 }
 
 .infoWeatherBlock{
-  @apply bg-white max-w-lg rounded-xl h-auto 
+  @apply bg-white w-auto rounded-xl h-auto 
 }
 .weatherCards{
   @apply  h-auto flex flex-wrap;
@@ -72,7 +72,7 @@
   @apply block ;
 }
 .icons{
-  @apply text-black
+  @apply text-black text-2xl 
 }
 
 .cardsWind{
@@ -97,15 +97,20 @@
   background-color: #AB3A71;
 }
 .cloudyCard{
-  @apply flex pl-10
+  @apply flex;
+    width: 250px;
+    height: 230px;
+    margin-left: 50px;
   }
 
-.sliderWeatherCardBlock{
-  @apply text-black
-}
+ 
+
 
 // ------------SliderWeatherCard------------
-
+ .sliderWrap{
+    max-width: 1200px;
+    margin: 0 auto
+  }
 .sliderWeatherCardBlock{
   @apply my-48 ;
   max-width: 1200px;
@@ -119,7 +124,73 @@
   @apply mr-12 
 }
 // -------------- WeatherCard---------
+.weatherCardsBlock{
+  @apply flex justify-between 
+}
+.weatherCardBlock {
+  @apply mt-10 shadow-sm  rounded-xl h-auto pb-16;
+  width: 320px;
+  background: rgb(226,107,152);
+  background: linear-gradient(342deg, rgba(226,107,152,1) 0%, rgba(186,83,129,0.8156512605042017) 65%);
+}
+.weatherImg{
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 10px;
+  height: 250px;
+  width: 250px;
+}
 
-.sliderWeatherCardBlock{
-  @apply ml-32
+.iconSubTitleBlock{
+  @apply flex justify-around  font-bold text-2xl text-white 
+
+}
+.iconSubTitleWeather{
+  @apply bg-pink-700 px-4 py-1 pb-2 rounded-3xl items-center
+}
+
+.iconSubTitleTimes{
+   @apply bg-pink-700 px-4 pt-1 rounded-3xl items-center 
+}
+.weatherTemp{
+  @apply flex justify-center mt-5 text-3xl 
+}
+// -------------sponsoredNews-------------
+.sponsoredNews{
+  margin: 0 auto;
+  width: 1200px;
+  @apply text-black font-medium mb-32 h-auto
+}
+.newsTitle{
+  @apply text-5xl  text-purple-800 font-bold  pb-10;
+}
+// ------------foter-------------
+
+.footerContentBlock{
+  margin: 0 auto;
+  width: 1200px;
+  @apply bg-black h-auto;
+}
+.logoBlockFooter{
+  @apply flex items-center py-24 justify-center border-b-4 border-slate-500 
+}
+.logoFooter{
+  @apply mr-2
+}
+.titleFooter{
+  @apply text-3xl font-bold
+}
+.contactInfo{
+  @apply flex justify-around py-10
+}
+.contentSocial{
+  @apply flex;
+}
+.icon{
+  @apply mr-5 w-auto h-8;
+
+  &:last-child{
+  @apply mr-0
+  }
 }
