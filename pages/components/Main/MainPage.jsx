@@ -4,6 +4,7 @@ import MainCloudyCard from './MainCloudyCard';
 import InfoWeatherBlock from './InfoWeatherBlock';
 
 export default function Main() {
+  
   return(
       <>
         <div className={styles.mainBlock}>

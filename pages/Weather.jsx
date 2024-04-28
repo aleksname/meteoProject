@@ -5,9 +5,6 @@ export default function SliderWeatherCard({titels}) {
   return(
     <>
       <MainContainter titels="Weather page">
-        <div className={styles.sliderWeatherCardBlock}>
-          lorr
-        </div>
       </MainContainter>
       </>
   )
