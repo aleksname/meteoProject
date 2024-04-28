@@ -6,7 +6,7 @@ import SliderWeatherCard from './components/SliderWeatherCard/SliderWeatherCard'
 import MainContainter from './components/MainContainter';
 import SponsoredNews from './components/SponsoredNews/SponsoredNews';
 import Footer from './components/Footer/Footer';
-import GetApiData from './components/GetApiData/GetApiData'
+import Contact from './Contact';
 
 export default function Page({titels}) {
   return(
@@ -18,11 +18,9 @@ export default function Page({titels}) {
             <SliderWeatherCard />
             <SponsoredNews />
             <Footer />
-            <GetApiData/>  
+          {/* <GetApiData/>   */}
         </div>
       </MainContainter>
       </>
   )
 }
-
-{/* <h1 className={styles.title}>Hello, Next.js!</h1> */}

@@ -20,7 +20,7 @@ export default function InfoWeatherBlock() {
     fetch("https://api.openweathermap.org/data/2.5/weather?lat=48.748718&lon=30.221500&units=metric&appid=28cf33db8bb5ca1ba332099cbea140c1")
       .then(res => res.json())
       .then(data => {
-        console.log(data)
+        // console.log(data)
         const temp = Math.round(data.main.temp);
         setTemperatures(temp);
 
@@ -35,7 +35,6 @@ export default function InfoWeatherBlock() {
 
         const pressure = Math.round(data.main.pressure);
         setPressure(pressure);
-        console.log(data)
       });
   }, []);
 
