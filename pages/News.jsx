@@ -3,7 +3,6 @@ export default function News({titels}) {
   return(
     <>
       <MainContainter titels={titels='News page'}>
-          lorsss
       </MainContainter>
       </>
   )

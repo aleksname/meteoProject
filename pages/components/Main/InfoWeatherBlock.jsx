@@ -36,6 +36,8 @@ export default function InfoWeatherBlock() {
         const pressure = Math.round(data.main.pressure);
         setPressure(pressure);
       });
+    
+    
   }, []);
 
   return(

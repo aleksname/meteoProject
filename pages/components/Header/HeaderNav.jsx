@@ -9,7 +9,7 @@ export default function HeaderNav() {
           <li className="navLi">
             <Link href='/' className={styles.link}>Home</Link>
             <Link href='Weather' className={styles.link}>Weather</Link>
-            <Link href='News' className={styles.link}>News</Link>
+            <Link href='Games' className={styles.link}>Games</Link>
             <Link href='Contact' className={styles.link}>Contact</Link>
           </li>
         </ul>

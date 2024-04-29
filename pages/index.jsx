@@ -17,7 +17,7 @@ export default function Page({titels}) {
             <Main />
             <SliderWeatherCard />
             <SponsoredNews />
-            <Footer />
+          <Footer />
           {/* <GetApiData/>   */}
         </div>
       </MainContainter>
