@@ -105,7 +105,7 @@
   @apply flex items-center ;
     width: 320px;
     height: 300px;
-    margin-left: 50px;
+    margin-left: 20px;
   }
 
  
@@ -249,8 +249,40 @@
 // -----------games page -------------
 
 .gamesPageBlock{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
 }
 
-.cardBlock{
-  @apply relative
+.pageBackground{
+  position: absolute;
+  z-index: -1;
 }
+
+.gamesCardArea{
+  @apply ml-60 pt-60
+}
+
+.areaCardsBlock{
+  width: 625px;
+  height: 545px;
+  background-color: #aa1bb9;
+  padding: 40px 10px 0px 10px;
+  border: #9b058e solid 3px;
+}
+.containers{
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1em;
+  background-color: #AB3A71;
+  padding: 10px;
+  margin-left: 50px;
+  border: #E26B98 solid 3px;
+}
+.gameCard{
+  @apply bg-white text-black  items-center flex justify-center 
+}
+
