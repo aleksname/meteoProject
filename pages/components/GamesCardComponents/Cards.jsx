@@ -4,7 +4,7 @@ import Card from './Card';
 
 export default function Cards() {
     const [items, setItems] = useState([
-        { id: 1, img: '/img/cardIcon1.png', stat: ''},
+        { id: 1, img: '/img/cardIcon1.png', stat: 'active'},
         { id: 1, img: '/img/cardIcon1.png', stat: ''},
         { id: 2, img: '/img/cardIcon2.png', stat: ''},
         { id: 2, img: '/img/cardIcon2.png', stat: ''},
@@ -25,22 +25,13 @@ export default function Cards() {
     const [prev, setPrev] = useState(-1)
 
     function handleClick(id) {
-    setItems(prevItems =>
-        prevItems.map((item, index) => {
-            if (index === id) {
-                return { ...item, stat: item.stat === 'active' ? '' : 'active' };
-            }
-            return item;
-        })
-    );
-}
-
-
+        alert(id)
+    }
     return (
         <>
             <div className={styles.containers}>
                 {items.map((item, index) => (
-                    <Card key={index} item={item} id={index} handleClick={handleClick} className={styles[item.stat]}/>
+                    <Card key={index} item={item} id={index} handleClick={handleClick} />
                 ))}
             </div>
         </>

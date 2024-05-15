@@ -1,5 +1,4 @@
 import styles from '../../../styles/App.module.scss'
-import Image from 'next/image'
 
 export default function Card({ item, id, handleClick }) {
     
@@ -8,7 +7,7 @@ export default function Card({ item, id, handleClick }) {
     return (
         <>
             <div className={styles['gameCard' + itemClass]} onClick={() => handleClick(id)}>
-                <Image src={item.img} alt={item.id} width={100} height={100} className={styles.cardImage} />
+                <img src={item.img} alt={item.id} width={100} height={100} className={styles.cardImage} />
             </div>
         </>
     )

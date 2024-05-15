@@ -300,7 +300,6 @@
 .cardImage{
   transform: scale(0);
   animation: 2s hideImage linear;
-  transform: transform 0.5s;
 
 }
 @keyframes hideImage {
@@ -313,15 +312,15 @@
 }
 
 
-styles.card.active {
-  transform: rotateY();
+.gameCard.active {
+  transform: rotateY(0);
 }
-styles.card.active img {
+.gameCard.active img {
   transform: scale(1);
 }
-.card.wrong{
+.gameCard.wrong{
   background-color: #9f5757;
 }
-.card.correct{
+.gameCard.correct{
   background-color: #46ad61;
 }
