@@ -12,7 +12,7 @@ export default function SliderWeatherCard() {
         <div className={styles.sliderWeatherCardBlock}>
               <div className={styles.weatherLinkBlock}>
                 <Link className={styles.weatherLink} href="/">Today</Link> 
-                <Link className={styles.weatherLink} href="/Weekly">Weekly</Link> 
+                <Link className={styles.weatherLink} href="/Weather">Weekly</Link> 
         </div> 
           <div className={styles.weatherCardsBlock}>
           <WeatherCard childrenTemp={'21°C  -  24°C'} time={'04.00PM'} weather={'сloudy'} cloudyImg={cloudyIcon } />

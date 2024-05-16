@@ -1,14 +1,17 @@
-import styles from '../../../styles/App.module.scss'
+import styles from '../../../styles/App.module.scss';
+import { useState } from 'react';
 
 export default function Card({ item, id, handleClick }) {
-    
-    const itemClass = item.stat ? ' active ' + item.stat : ""
+    const [isFlipped, setIsFlipped] = useState(false);
+
+    const handleCardClick = () => {
+        setIsFlipped(!isFlipped);
+        handleClick(id);
+    };
 
     return (
-        <>
-            <div className={styles['gameCard' + itemClass]} onClick={() => handleClick(id)}>
-                <img src={item.img} alt={item.id} width={100} height={100} className={styles.cardImage} />
-            </div>
-        </>
-    )
-} 
+        <div className={`${styles.gameCard} ${isFlipped ? styles.active : ''}`} onClick={handleCardClick}>
+            <img src={isFlipped ? item.img : ''} className={styles.cardImage}  />
+        </div>
+    );
+}

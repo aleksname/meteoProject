@@ -4,7 +4,7 @@ import Card from './Card';
 
 export default function Cards() {
     const [items, setItems] = useState([
-        { id: 1, img: '/img/cardIcon1.png', stat: 'active'},
+        { id: 1, img: '/img/cardIcon1.png', stat: ''},
         { id: 1, img: '/img/cardIcon1.png', stat: ''},
         { id: 2, img: '/img/cardIcon2.png', stat: ''},
         { id: 2, img: '/img/cardIcon2.png', stat: ''},
@@ -22,10 +22,8 @@ export default function Cards() {
         { id: 8, img: '/img/cardIcon8.png', stat: ''},
     ].sort(() => Math.random() - 0.5))
 
-    const [prev, setPrev] = useState(-1)
-
     function handleClick(id) {
-        alert(id)
+        // alert(id)
     }
     return (
         <>
