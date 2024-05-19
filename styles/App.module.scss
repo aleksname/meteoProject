@@ -108,13 +108,10 @@
     margin-left: 20px;
   }
 
- 
-
-
 // ------------SliderWeatherCard------------
  .sliderWrap{
     max-width: 1200px;
-    margin: 0 auto
+    margin: 0 auto;
   }
 .sliderWeatherCardBlock{
   @apply mt-8 ;
@@ -132,7 +129,7 @@
   @apply flex justify-between pb-32 
 }
 .weatherCardBlock {
-  @apply mt-10 shadow-sm  rounded-xl h-auto pb-16;
+  @apply mt-10 shadow-sm  rounded-xl h-auto pb-16 ;
   width: 320px;
   background: rgb(226,107,152);
   background: linear-gradient(342deg, rgba(226,107,152,1) 0%, rgba(186,83,129,0.8156512605042017) 65%);
@@ -335,21 +332,50 @@
 }
 // ------------weatherPage-----------
 
-.weatherPage{
-  background-image: url('../pages/components/img/Weather/mainBackground2.png');
-  max-width: 1400px;
-  @apply w-full h-auto  rounded-3xl 
+// .weatherPage{
+//   background-image: url('../pages/components/img/Weather/mainBackground2.png');
+//   max-width: 1400px;
+//   @apply w-full h-auto  rounded-3xl 
+// }
+
+// .weatherDeckriptionBlock{
+//   background: rgb(226,107,152);
+//   background: linear-gradient(342deg, rgb(167, 147, 155) 0%, rgb(225, 76, 143)66%);
+//   @apply  font-bold text-lg px-24 pt-4;
+// }
+
+// .descriptionBlock{
+//   @apply text-2xl text-slate-400
+// }
+
+
+
+.slider {
+  max-width: 1200px;
+  @apply mt-40 flex justify-center pl-10;
+  margin: 0 auto;
+  justify-content: space-between;
 }
+
 
 .weatherDeckriptionBlock{
   background: rgb(226,107,152);
   background: linear-gradient(342deg, rgb(167, 147, 155) 0%, rgb(225, 76, 143)66%);
-  @apply  font-bold text-lg px-24 pt-4;
+  @apply  font-bold text-lg px-32 mt-32;
 }
 
 .descriptionBlock{
   @apply text-2xl text-slate-400
 }
-.weatherCardTitle{
-  @apply text-4xl flex justify-center py-20
+
+.weatherPage {
+  @apply mt-8 mb-40;
+  border-radius: 20px;
+  width: 1400px;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  padding-bottom: 50px;
+  justify-content: space-between;
+  display: flex
 }
