@@ -18,22 +18,9 @@ export default function MainContainter({ children, keywords, titels }) {
                     <div className={styles.title}>My<span className={styles.titleSpan}>Clima</span></div>
                 </div>
                 <HeaderNav />
-                <HeaderSetting/>
+        <HeaderSetting />
           </div>
       <div>{ children}</div>
     </>
   )
 }
-
-// import Image from 'next/image'
-// import styles from '../../../styles/App.module.scss'
-// import HeaderNav from './HeaderNav'
-// import HeaderSetting from './HeaderSetting';
-
-// export default function () {
-//     return (
-//         <>
-           
-//         </>
-//     )
-// }

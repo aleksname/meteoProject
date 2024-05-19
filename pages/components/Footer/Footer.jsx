@@ -10,8 +10,7 @@ import Link from 'next/link'
 export default function Footer() {
     return (
         <>
-            <div className={styles.footerContentBlocks}>
-                <div className={styles.footerContentBlock}>
+            <div className={styles.footerContentBlock}>
                 <div className={styles.footerLogotipe}>
                     <div className={styles.logoBlockFooter}>
                         <Image src={logo} className={styles.logoFooter} alt="logotipe"/>
@@ -29,7 +28,6 @@ export default function Footer() {
 
                     </div>
                 </div>
-            </div>
         </>
     )
 }

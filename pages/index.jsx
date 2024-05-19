@@ -8,7 +8,10 @@ import SponsoredNews from './components/SponsoredNews/SponsoredNews';
 import Footer from './components/Footer/Footer';
 import Contact from './Contact';
 
-export default function Page({titels}) {
+import { register } from 'swiper/element/bundle';
+register();
+
+export default function Page({ titels }) {
   return(
     <>
       <MainContainter titels='Home page'>
@@ -17,7 +20,7 @@ export default function Page({titels}) {
             <Main />
             <SliderWeatherCard />
             <SponsoredNews />
-            <Footer />
+          <Footer />
           {/* <GetApiData/>   */}
         </div>
       </MainContainter>
