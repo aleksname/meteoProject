@@ -472,19 +472,21 @@ background: radial-gradient(circle, rgba(94,129,251,1) 0%, rgba(94,129,251,1) 24
 
 // --------random color----------
 
-.randomBlockArea{
+.randomBlockArea {
   @apply w-9/12 h-5/6 bg-purple-500 flex justify-center items-center rounded-3xl;
   margin: 0 auto;
   border: 5px solid skyblue;
 }
+
 .randomLi {
-  width: 15%;
+  width: 35%;
   height: 5%;
   @apply flex justify-center items-center font-bold text-2xl;
   margin: 0 auto;
   margin-top: 13px;
   padding: 20px 0;
 }
+
 .randomLi:nth-child(1) { background: #f00; transform: rotate(0); }
 .randomLi:nth-child(2) { background: #ff0; transform: rotate(0); }
 .randomLi:nth-child(3) { background: #0f0; transform: rotate(0); }

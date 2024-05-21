@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import MainContainter from './components/MainContainter';
 import styles from '../styles/App.module.scss';
 import Link from 'next/link';
@@ -6,15 +6,23 @@ import Link from 'next/link';
 export default function Random() {
     const [spinning, setSpinning] = useState(false);
     const [rotation, setRotation] = useState(0);
+    const [randomData, setRandomData] = useState([]);
 
-    const handleClick = () => {
-        const additionalRotation = Math.floor(Math.random() * 360) + 1440; // 4+ оберти та випадковий кут
-        setRotation(prevRotation => prevRotation + additionalRotation);
-        setSpinning(true);
-        setTimeout(() => {
-            setSpinning(false);
-        }, 4000); // тривалість анімації
+    const data = ['Єгор', 'Софія', 'Аміна', 'Артем', 'Алан та Вєлат', 'Item 6', 'Item 7', 'Item 8'];
+
+    const shuffleArray = (array) => {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
     };
+
+    useEffect(() => {
+        const shuffledData = shuffleArray([...data]);
+        setRandomData(shuffledData.slice(0, 8)); // Вибрати перші 8 елементів після перемішування
+    }, []);
+
 
     return (
         <>
@@ -27,15 +35,12 @@ export default function Random() {
 
                     <div className={styles.randomBlockArea}>
                         <ul className={styles.randomUl}>
-                                <li className={styles.randomLi}></li>
-                                <li className={styles.randomLi}></li>
-                                <li className={styles.randomLi}></li>
-                                <li className={styles.randomLi}></li>
-                                <li className={styles.randomLi}></li>
-                                <li className={styles.randomLi}></li>
-                                <li className={styles.randomLi}></li>
-                                <li className={styles.randomLi}></li>
-                            </ul>
+                            {randomData.map((item, index) => (
+                                <li key={index} className={styles.randomLi}>
+                                    {item}
+                                </li>
+                            ))}
+                        </ul>
                     </div>
                 </div>
             </MainContainter>
