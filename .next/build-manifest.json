@@ -12,15 +12,15 @@
   ],
   "rootMainFiles": [],
   "pages": {
-    "/Contact": [
+    "/Games": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/Contact.js"
+      "static/chunks/pages/Games.js"
     ],
-    "/Weather": [
+    "/Random": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/Weather.js"
+      "static/chunks/pages/Random.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",
