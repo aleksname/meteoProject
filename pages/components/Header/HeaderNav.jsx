@@ -10,6 +10,7 @@ export default function HeaderNav() {
             <Link href='/' className={styles.link}>Home</Link>
             <Link href='Weather' className={styles.link}>Weather</Link>
             <Link href='Games' className={styles.link}>Games</Link>
+            <Link href='Random' className={styles.link}>Random</Link>
             <Link href='Contact' className={styles.link}>Contact</Link>
           </li>
         </ul>
