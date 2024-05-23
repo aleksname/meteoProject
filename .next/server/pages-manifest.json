@@ -2,7 +2,9 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/Contact": "pages/Contact.js",
+  "/Games": "pages/Games.js",
   "/": "pages/index.js",
-  "/Random": "pages/Random.js",
-  "/Spin": "pages/Spin.js"
+  "/Weather": "pages/Weather.js",
+  "/Random": "pages/Random.js"
 }

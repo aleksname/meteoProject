@@ -6,7 +6,6 @@ import SliderWeatherCard from './components/SliderWeatherCard/SliderWeatherCard'
 import MainContainter from './components/MainContainter';
 import SponsoredNews from './components/SponsoredNews/SponsoredNews';
 import Footer from './components/Footer/Footer';
-import Contact from './Contact';
 
 import { register } from 'swiper/element/bundle';
 register();

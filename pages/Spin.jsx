@@ -34,9 +34,6 @@ export default function Random() {
                                 <li className={styles.roundLi}></li>
                                 <li className={styles.roundLi}></li>
                                 <li className={styles.roundLi}></li>
-                                <li className={styles.roundLi}></li>
-                                <li className={styles.roundLi}></li>
-                                <li className={styles.roundLi}></li>
                             </ul>
                         <div className={styles.roundCenter}>&#9733;</div>
                     </div>

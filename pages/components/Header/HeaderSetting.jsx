@@ -1,12 +1,39 @@
-import styles from '../../../styles/App.module.scss'
-import SettingsImg from '../img/header/Setting_line.png'
-import Image  from 'next/image';
-import { Link } from 'next/link';
+import React from 'react';
+import Drawer from '@mui/material/Drawer';
+import Button from '@mui/material/Button';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import Switch from '@mui/material/Switch';
 
+import settingImg from '../img/header/Setting_line.png'
+import Image from 'next/image';
+
+import styles from '../../../styles/App.module.scss'
 export default function HeaderSetting() {
-  return(
+  const [state, setState] = React.useState({
+    right: false,
+  });
+
+  const toggleDrawer = (open) => () => {
+    setState({ ...state, right: open });
+  };
+
+  return (
     <>
-      <Image src={SettingsImg} alt='setting' className={styles.setting} />
+      <Button onClick={toggleDrawer(true)}>
+      <Image src={settingImg} alt="1"  className={styles.headerSetting} />
+      </Button>
+      <Drawer
+        anchor="right"
+        open={state.right}
+        onClose={toggleDrawer(false)}
+      >
+        <div className="">dd</div>
+        <FormControlLabel
+          control={<Switch />}
+          label="Перемкнути тему"
+          sx={{ m: 1 }}
+        />
+      </Drawer>
     </>
-  )
+  );
 }

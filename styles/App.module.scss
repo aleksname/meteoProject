@@ -25,7 +25,7 @@
 
 // ---------------------- header nav end-------------------------
 
-.setting{
+.headerSetting{
     @apply w-12 h-12 ml-5 
 }
 // ---------------------- header setting end-------------------------
@@ -397,15 +397,15 @@
     @apply mr-0     
 }
 .randomBlock {
- background: rgb(94,129,251);
-background: radial-gradient(circle, rgba(94,129,251,1) 0%, rgba(94,129,251,1) 24%, rgba(87,144,251,1) 27%, rgba(67,190,251,1) 45%, rgba(63,200,251,1) 56%, rgba(122,63,251,1) 79%, rgba(122,63,251,1) 90%, rgba(122,63,251,1) 97%);
+  background: radial-gradient(circle, rgba(94,129,251,1) 0%, rgba(94,129,251,1) 24%, rgba(87,144,251,1) 27%, rgba(67,190,251,1) 45%, rgba(63,200,251,1) 56%, rgba(122,63,251,1) 79%, rgba(122,63,251,1) 90%, rgba(122,63,251,1) 97%);
   padding: 80px 0;
   width: 100vw;
   height: 100vh;
 }
-
 .round {
-  @apply flex items-center justify-center mb-2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
   width: 400px;
   height: 400px;
@@ -424,7 +424,6 @@ background: radial-gradient(circle, rgba(94,129,251,1) 0%, rgba(94,129,251,1) 24
   margin: 0;
   list-style: none;
 }
-
 .roundLi {
   position: absolute;
   width: 50%;
@@ -432,11 +431,12 @@ background: radial-gradient(circle, rgba(94,129,251,1) 0%, rgba(94,129,251,1) 24
   top: 0;
   left: 50%;
   transform-origin: 0% 100%;
-  clip-path: polygon(0 0, 100% 0, 50% 100%);
 }
 
-.roundCenter{
-  @apply text-3xl font-bold bg-purple-500 px-20 py-20;
+.roundCenter {
+  font-size: 3rem;
+  @apply font-bold px-20 py-14;
+  background: #7a3ffb;
   border: 5px solid rgb(221, 42, 188);
   border-radius: 50%;
   z-index: 1;
@@ -445,42 +445,66 @@ background: radial-gradient(circle, rgba(94,129,251,1) 0%, rgba(94,129,251,1) 24
   @apply text-slate-800
 }
 /* Кольори для кожного сектору */
-.roundLi:nth-child(1) { background: #f00; transform: rotate(0deg); }
-.roundLi:nth-child(2) { background: #ff0; transform: rotate(45deg); }
-.roundLi:nth-child(3) { background: #0f0; transform: rotate(90deg); }
-.roundLi:nth-child(4) { background: #0ff; transform: rotate(135deg); }
-.roundLi:nth-child(5) { background: #00f; transform: rotate(180deg); }
-.roundLi:nth-child(6) { background: #f0f; transform: rotate(225deg); }
-.roundLi:nth-child(7) { background: #f80; transform: rotate(270deg); }
-.roundLi:nth-child(8) { background: #08f; transform: rotate(315deg); }
-
-.poundSpinBtn{
-  @apply flex font-bold text-5xl text-purple-900; 
-  
-  &:hover{
-    @apply text-purple-600
-  }
-   &:active{
-    @apply text-purple-400
-  }
-  margin: 0 auto;
+.roundLi:nth-child(1) { 
+    background: #f00; 
+    transform: rotate(0deg); 
 }
-.roundArrowSpin{
-  @apply flex font-bold text-2xl text-white;
-  margin: 0 auto;
+
+.roundLi:nth-child(2) { 
+    background: #ff0; 
+    transform: rotate(72deg); 
+}
+
+.roundLi:nth-child(3) { 
+    background: #0f0; 
+    transform: rotate(144deg); 
+}
+
+.roundLi:nth-child(4) { 
+    background: #0ff; 
+    transform: rotate(216deg); 
+}
+
+.roundLi:nth-child(5) { 
+    background: #00f; 
+    transform: rotate(288deg); 
+}
+
+.poundSpinBtn {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #7a3ffb;
+  margin: 20px auto;
+  display: block;
+
+  &:hover {
+    color: #a25ffb;
+  }
+
+  &:active {
+    color: #c47aff;
+  }
+}
+
+.roundArrowSpin {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin: 10px auto;
+  display: block;
 }
 
 // --------random color----------
 
 .randomBlockArea {
-  @apply w-9/12 h-5/6 bg-purple-500 flex justify-center items-center rounded-3xl;
+  @apply w-9/12 h-auto pb-4 bg-purple-500 flex justify-center items-center rounded-3xl;
   margin: 0 auto;
   border: 5px solid skyblue;
 }
 
 .randomLi {
   width: 35%;
-  height: 5%;
+  height: 25px;
   @apply flex justify-center items-center font-bold text-2xl;
   margin: 0 auto;
   margin-top: 13px;
@@ -501,4 +525,31 @@ background: radial-gradient(circle, rgba(94,129,251,1) 0%, rgba(94,129,251,1) 24
   height: 100%;
   top: 50%;
   left: 50px;
+}
+
+.loadingContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff; /* або будь-який інший колір фону */
+    z-index: 9999;
+}
+
+.loadingAnimation {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ccc;
+    border-top: 5px solid #333;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

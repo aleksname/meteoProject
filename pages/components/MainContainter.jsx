@@ -11,7 +11,7 @@ export default function MainContainter({ children, keywords, titels }) {
       <Head>
         <meta keywords={"nextjs, alexname main page" + keywords}></meta>
               <title>{ titels}</title>
-          </Head>
+      </Head>
            <div className={styles.headerBlock}>
                 <div className={styles.logoBlock}>
                     <Image src={logo} className={styles.logo} alt="logotipe"/>

@@ -17,15 +17,25 @@
       "static/chunks/main.js",
       "static/chunks/pages/index.js"
     ],
+    "/Contact": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Contact.js"
+    ],
+    "/Games": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Games.js"
+    ],
     "/Random": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/Random.js"
     ],
-    "/Spin": [
+    "/Weather": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/Spin.js"
+      "static/chunks/pages/Weather.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",
