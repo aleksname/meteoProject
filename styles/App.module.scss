@@ -397,10 +397,11 @@
     @apply mr-0     
 }
 .randomBlock {
-  background: radial-gradient(circle, rgba(94,129,251,1) 0%, rgba(94,129,251,1) 24%, rgba(87,144,251,1) 27%, rgba(67,190,251,1) 45%, rgba(63,200,251,1) 56%, rgba(122,63,251,1) 79%, rgba(122,63,251,1) 90%, rgba(122,63,251,1) 97%);
-  padding: 80px 0;
+  background-image: url('../pages/components/img/Random/backgroundRandomPage.png');
+  background-size: cover;
   width: 100vw;
   height: 100vh;
+  @apply bg-center ;
 }
 .round {
   display: flex;
@@ -493,63 +494,39 @@
   margin: 10px auto;
   display: block;
 }
-
-// --------random color----------
-
-.randomBlockArea {
-  @apply w-9/12 h-auto pb-4 bg-purple-500 flex justify-center items-center rounded-3xl;
-  margin: 0 auto;
-  border: 5px solid skyblue;
-}
-
-.randomLi {
-  width: 35%;
-  height: 25px;
-  @apply flex justify-center items-center font-bold text-2xl;
-  margin: 0 auto;
-  margin-top: 13px;
-  padding: 20px 0;
-}
-
-.randomLi:nth-child(1) { background: #f00; transform: rotate(0); }
-.randomLi:nth-child(2) { background: #ff0; transform: rotate(0); }
-.randomLi:nth-child(3) { background: #0f0; transform: rotate(0); }
-.randomLi:nth-child(4) { background: #0ff; transform: rotate(0); }
-.randomLi:nth-child(5) { background: #00f; transform: rotate(0); }
-.randomLi:nth-child(6) { background: #f0f; transform: rotate(0); }
-.randomLi:nth-child(7) { background: #f80; transform: rotate(0); }
-.randomLi:nth-child(8) { background: #08f; transform: rotate(0); }
-
-.randomUl {
-  width: 100%;
-  height: 100%;
-  top: 50%;
-  left: 50px;
-}
-
-.loadingContainer {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff; /* або будь-який інший колір фону */
-    z-index: 9999;
-}
-
-.loadingAnimation {
-    width: 50px;
-    height: 50px;
-    border: 5px solid #ccc;
-    border-top: 5px solid #333;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-}
-
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+// --------random color----------
+
+.randomBlockArea {
+  position: absolute;
+  left: 58%;
+  top: 50%;
+  width: 550px;
+}
+
+.randomTitle{
+  @apply text-black text-xl
+}
+.randomTitle2{
+  @apply mt-2 text-black text-2xl
+}
+.randomTitleSpan{
+  @apply mt-2
+}
+.randomUl{
+  @apply flex;
+}
+.randomLi {
+  @apply text-2xl font-bold mr-5;
+}
+
+.randomLi:nth-child(1) { color: #f00; transform: rotate(0); }
+.randomLi:nth-child(2) { color: rgb(164, 17, 142); transform: rotate(0); }
+.randomLi:nth-child(3) { color: rgb(66, 183, 66); transform: rotate(0); }
+.randomLi:nth-child(4) { color: rgb(22, 129, 86); transform: rotate(0); }
+.randomLi:nth-child(5) { color: #00f; transform: rotate(0); }
+
