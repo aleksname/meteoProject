@@ -28,12 +28,11 @@ export default function Random() {
 
                 <div className={styles.randomBlockArea}>
                         <strong className={styles.randomTitle}>Я - старий чаклун із далекої чарівної країни. Сьогодні до мене долетів магічний сигнал, і він розповів мені дещо неймовірне про кожного з вас. Кожен із вас має свій особливий колір, який супроводжує вас у житті та надає вам сили та натхнення. Цей колір - частина вашої природи, вашого внутрішнього світу.
-                        
-                        <p  className={styles.randomTitleSpan}>
-                             Давайте разом дізнаємося, який колір належить саме вам! Приготуйтеся до магічної подорожі, де колесо фортуни розкриє ваш колір долі та порядок здачі ваших робіт. Чарівництво починається!
-                        </p>
-                    </strong>
-                    <strong className={styles.randomTitle2}>Ось ваші кольори &#10552;</strong>
+                            {/* <p  className={styles.randomTitleSpan}>
+                                Давайте разом дізнаємося, який колір належить саме вам! Приготуйтеся до магічної подорожі, де колесо фортуни розкриє ваш колір долі та порядок здачі ваших робіт. Чарівництво починається!
+                            </p> */}
+                            <h2 className={styles.randomTitle2}>Ось ваші кольори &#10552;</h2>
+                        </strong>
                     <p className={styles.randomTitle}></p>
                     <ul className={styles.randomUl}>
                         {randomData.map((item, index) => (
@@ -42,6 +41,7 @@ export default function Random() {
                             </li>
                         ))}
                     </ul>
+                    <Link href='Spin' className={styles.linkRandom}>&#10553;Почати пригоду</Link>
                 </div>
             </div>
         </MainContainter>
