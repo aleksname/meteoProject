@@ -2,7 +2,6 @@ import Image from 'next/image'
 import MainContainter from './components/MainContainter';
 import ContactImg from './components/img/ContactPage/contactSectionImg.png'
 import styles from '../styles/App.module.scss'
-import logo from './components/img/header/Logo.png'
 import ContactPageInput from './components/ContactPageInput/ContactPageInput';
 
 export default function Contact({titels}) {
