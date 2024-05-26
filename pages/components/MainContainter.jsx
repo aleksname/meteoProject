@@ -10,7 +10,7 @@ export default function MainContainter({ children, keywords, titels }) {
     <>
       <Head>
         <meta keywords={"nextjs, alexname main page" + keywords}></meta>
-              <title>{ titels}</title>
+        <title>{ titels}</title>
       </Head>
            <div className={styles.headerBlock}>
                 <div className={styles.logoBlock}>
@@ -20,7 +20,7 @@ export default function MainContainter({ children, keywords, titels }) {
                 <HeaderNav />
         <HeaderSetting />
           </div>
-      <div>{ children}</div>
+      <div>{children}</div>
     </>
   )
 }

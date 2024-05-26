@@ -9,7 +9,6 @@ export default function Games({titels}) {
         <>
             <MainContainter titels={titels = 'Games page'} >
                 <div className={styles.gamesPageBlock}>
-                    <Image src={Background}  className={ styles.pageBackground} />
                     <GamesCardArea/>
                 </div>
             </MainContainter>

@@ -21,16 +21,8 @@ export default function Random() {
     return (
         <MainContainter titels={'Random page'}>
             <div className={styles.randomBlock}>
-                {/* <nav className={styles.navRandomPages}>
-                    <Link href='Random' className={styles.linkRandom}>Random color</Link>
-                    <Link href='Spin' className={styles.linkRandom}>Spin</Link>
-                </nav> */}
-
                 <div className={styles.randomBlockArea}>
                         <strong className={styles.randomTitle}>Я - старий чаклун із далекої чарівної країни. Сьогодні до мене долетів магічний сигнал, і він розповів мені дещо неймовірне про кожного з вас. Кожен із вас має свій особливий колір, який супроводжує вас у житті та надає вам сили та натхнення. Цей колір - частина вашої природи, вашого внутрішнього світу.
-                            {/* <p  className={styles.randomTitleSpan}>
-                                Давайте разом дізнаємося, який колір належить саме вам! Приготуйтеся до магічної подорожі, де колесо фортуни розкриє ваш колір долі та порядок здачі ваших робіт. Чарівництво починається!
-                            </p> */}
                             <h2 className={styles.randomTitle2}>Ось ваші кольори &#10552;</h2>
                         </strong>
                     <p className={styles.randomTitle}></p>

@@ -1,7 +1,5 @@
 import MainContainter from './components/MainContainter';
 import styles from '../styles/App.module.scss';
-import SpinCircle from './components/SpinCircle';
-import BetweenSpin from './components/BetweenSpin';
 
 export default function Random() {
 
@@ -18,8 +16,6 @@ export default function Random() {
                         </strong>
                         <p className={styles.randomTitle}></p>
                     </div>
-                    <BetweenSpin/>
-                    <SpinCircle />
                 </div>
             </MainContainter>
         </>
