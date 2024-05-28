@@ -27,10 +27,10 @@ export default function HeaderSetting() {
         open={state.right}
         onClose={toggleDrawer(false)}
       >
-        <div className="">dd</div>
+        <div className={ styles.headerSettingTitle}>Select setting</div>
         <FormControlLabel
           control={<Switch />}
-          label="Перемкнути тему"
+          label="Switch thema"
           sx={{ m: 1 }}
         />
       </Drawer>

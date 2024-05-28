@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import MainContainter from './components/MainContainter';
 import styles from '../styles/App.module.scss';
 import Link from 'next/link';
+import { Badge } from '@mui/base/Badge';
 
 export default function Random() {
     const [randomData, setRandomData] = useState([]);
@@ -22,6 +23,7 @@ export default function Random() {
         <MainContainter titels={'Random page'}>
             <div className={styles.randomBlock}>
                 <div className={styles.randomBlockArea}>
+                    
                         <strong className={styles.randomTitle}>Я - старий чаклун із далекої чарівної країни. Сьогодні до мене долетів магічний сигнал, і він розповів мені дещо неймовірне про кожного з вас. Кожен із вас має свій особливий колір, який супроводжує вас у житті та надає вам сили та натхнення. Цей колір - частина вашої природи, вашого внутрішнього світу.
                             <h2 className={styles.randomTitle2}>Ось ваші кольори &#10552;</h2>
                         </strong>

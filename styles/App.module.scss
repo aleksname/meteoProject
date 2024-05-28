@@ -29,6 +29,9 @@
 .headerSetting{
     @apply w-12 h-12 p-0
 }
+.headerSettingTitle{
+  @apply flex justify-center items-center font-medium text-xl py-3
+}
 
 // ---------------------- main block-----------------
 
@@ -191,50 +194,61 @@
 }
 
 //---------------------- Contact page-------------
-
-.contactPageBlock{
-  @apply flex my-24  justify-between text-slate-600 text-lg font-bold
-}
-.articleImg{
-  @apply max-w-xl h-full
+/* styles/App.module.scss */
+.contactPageBlock {
+  @apply flex my-24 justify-between text-slate-600 text-lg font-bold;
 }
 
-//---------------------- Contact page aside-------------
+.articleImg {}
 
-.aside{
-  @apply w-6/12
+.aside {
+  @apply w-5/12;
 }
 
-.asideSubTitle{
-  @apply mb-8 text-2xl
+.asideLogoBlock {
+  @apply flex items-center justify-center text-2xl mb-3;
 }
-.SubTitleSpan{
-  @apply text-purple-900 
-}
-.asideSubTitle{
 
+.logoAside {
+  @apply mr-3;
 }
-.inputBlock{
-}
-.input{
-  @apply py-3 mb-4 w-full px-2
-}
-.inputMessage{
-  @apply pt-3 pb-96 mb-8 w-full px-2;
-}
-.asideBtn{
-  @apply text-2xl flex text-purple-900  bg-slate-400 w-full py-2 justify-center rounded-lg border-none;
 
-  
-  &:hover{
-    @apply bg-slate-300 text-purple-500 border-purple-600 border-b-4
+.asideSubTitle {
+  @apply mb-8 text-2xl flex justify-center;
+}
+
+.SubTitleSpan {
+  @apply text-purple-900;
+}
+
+.input {
+  @apply py-3 mb-4 w-full px-2;
+  &:focus {
+    outline: none;
   }
-  &:active{
-    @apply bg-slate-500 text-purple-900 border-purple-600 border-b-4
-
-  }
-  
 }
+
+.inputMessage {
+  @apply pt-3 mb-8 w-full px-2 h-52 resize-none;
+  &:focus {
+    outline: none;
+  }
+}
+
+.error {
+  @apply text-red-500 mb-4;
+}
+
+.asideBtn {
+  @apply text-2xl flex text-purple-900 bg-slate-400 w-full py-2 justify-center rounded-lg border-none;
+  &:hover {
+    @apply bg-slate-300 text-purple-500 border-purple-600 border-b-4;
+  }
+  &:active {
+    @apply bg-slate-500 text-purple-900 border-purple-600 border-b-4;
+  }
+}
+
 
 // -----------games page -------------
 
@@ -348,14 +362,14 @@
   background-image: url('../pages/components/img/Random/backgroundRandomPage.png');
   width: 100vw;
   height: 100vh;
-  @apply bg-center bg-cover ;
+  @apply bg-center bg-cover bg-no-repeat ;
 }
 
 
 .randomBlockArea {
-  position: absolute;
+  position: relative;
   left: 58%;
-  top: 50%;
+  top: 40%;
   width: 550px;
 }
 
@@ -407,12 +421,22 @@
 }
 
 .spinBlockArea {
-  position: absolute;
-  left: 33%;
-  top: 65%;
-  width: 560px;
+  background-image: url('../pages/components/img/Random/oldPapirus.jpg');
+  @apply flex relative justify-center  bg-cover  w-6/12 pt-40 pb-20 px-20;
+  margin: 0 auto;
+  top: 30%;
 }
 
 .randomTitleSpan{
   @apply mt-2
+}
+
+.spinSlider{
+  max-width: 1000px;
+  @apply flex justify-center;
+  margin: 0 auto;
+}
+.spinSlidsBlock{
+  max-width: 100px;
+  max-height: 100px;
 }
