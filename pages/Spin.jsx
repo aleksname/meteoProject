@@ -1,5 +1,6 @@
 import MainContainter from './components/MainContainter';
 import styles from '../styles/App.module.scss';
+import SpinSliders from './components/SpinSlider/SpinSlider';
 
 export default function Random() {
 
@@ -17,6 +18,7 @@ export default function Random() {
                         <p className={styles.randomTitle}></p>
                     </div>
                 </div>
+                <SpinSliders/>
             </MainContainter>
         </>
     );

@@ -16,6 +16,7 @@
     "@mui/icons-material": "^5.15.18",
     "@mui/material": "^5.15.18",
     "express": "^4.19.2",
+    "firebase": "^10.12.1",
     "mongodb": "^6.6.2",
     "newsapi": "^2.4.1",
     "next": "^14.2.1",

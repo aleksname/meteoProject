@@ -8,6 +8,7 @@ body {
     align-items: center; 
     background-color: rgb(204, 204, 204);
     color: white;
+    overflow-x: hidden; 
 }
 
 
