@@ -394,7 +394,7 @@
 .randomLi:nth-child(1) { color: #f00; transform: rotate(0); }
 .randomLi:nth-child(2) { color: rgb(164, 17, 142); transform: rotate(0); }
 .randomLi:nth-child(3) { color: rgb(66, 183, 66); transform: rotate(0); }
-.randomLi:nth-child(4) { color: rgb(22, 129, 86); transform: rotate(0); }
+.randomLi:nth-child(4) { color: rgb(86, 70, 39); transform: rotate(0); }
 .randomLi:nth-child(5) { color: #00f; transform: rotate(0); }
 
 .linkRandom{
@@ -413,30 +413,37 @@
 
 // ---------------Random page => spin page #1---------
 
+
 .spinBlock {
   background-image: url('../pages/components/img/Random/backgroundSpinPage.png');
   width: 100vw;
-  height: 100vh;
-  @apply bg-center bg-cover;
+  height: auto;
+  @apply bg-center bg-cover relative pb-32 ;
 }
 
 .spinBlockArea {
   background-image: url('../pages/components/img/Random/oldPapirus.jpg');
-  @apply flex relative justify-center  bg-cover  w-6/12 pt-40 pb-20 px-20;
+  @apply flex relative justify-center  bg-cover  w-7/12 pt-40 pb-32 px-20 ;
   margin: 0 auto;
-  top: 30%;
 }
 
 .randomTitleSpan{
   @apply mt-2
 }
 
-.spinSlider{
-  max-width: 1000px;
-  @apply flex justify-center;
+// ---------- SpinSlider page ------------
+
+.mySwiper {
+  width: 1000px; 
   margin: 0 auto;
+  @apply flex items-center mt-10 relative;
+
 }
-.spinSlidsBlock{
-  max-width: 100px;
-  max-height: 100px;
+
+    
+.swipersSliderTitle{
+  @apply flex relative  bg-cover w-5/12  pt-96  px-20  relative  text-3xl;
+  // background-image: url('../pages/components/img/Random/oldPapirus.jpg');
+  margin: 0 auto;
+  font-family: "Great Vibes", cursive;
 }
