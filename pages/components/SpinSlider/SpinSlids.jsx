@@ -1,10 +1,11 @@
-import Image from "next/image"
-import styles from '../../../styles/App.module.scss'
+import React from 'react';
+import Image from "next/image";
+import styles from '../../../styles/App.module.scss';
 
-export default function SpinSlids({color}) {
+export default function SpinSlids({ src }) {
   return (
-      <>
-        <Image className={styles.spinSlidsBlock}></Image>
-      </>
-)
+    <div className={styles.spinSlidsBlock}>
+      <Image src={src} alt="Slide Image" className={styles.spinSlidsImage} />
+    </div>
+  );
 }

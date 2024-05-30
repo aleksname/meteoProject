@@ -49,7 +49,7 @@ export default function InfoWeatherBlock() {
           <Api text='Temp ' icon={tempIcon} value={`${temperatures}°C`} />
           <Api text='Humidity ' icon={humidityIcon} value={`${humidity}%`} />
           <Api text='Pressure:' icon={pressur} value={`${pressure}%`} />
-        </div>    
+        </div>   
       </div>
     </>
   )
