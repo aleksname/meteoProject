@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import MainContainter from './components/MainContainter';
 import styles from '../styles/App.module.scss';
 import Link from 'next/link';
-import { Badge } from '@mui/base/Badge';
 
 export default function Random() {
     const [randomData, setRandomData] = useState([]);
@@ -20,7 +19,8 @@ export default function Random() {
     }, []);
 
     return (
-        <MainContainter titels={'Random page'}>
+        <div className={styles.wrapper}>
+            <MainContainter titels={'Random page'}>
             <div className={styles.randomBlock}>
                 <div className={styles.randomBlockArea}>
                     
@@ -39,5 +39,6 @@ export default function Random() {
                 </div>
             </div>
         </MainContainter>
+        </div>
     );
 }

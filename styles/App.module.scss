@@ -1,19 +1,20 @@
 // file: App.mpdule.scss
 .headerBlock{
-    @apply flex justify-center items-center mt-10;
+    @apply flex justify-center items-center mt-10 ;
 }
+
+
 .logoBlock{
-    @apply flex font-bold text-2xl 
-    bg-slate-300 rounded-lg py-2 px-4 shadow-2xl items-center mr-96   
+    @apply flex items-center mr-96 ;
 }
 .logo{
-    @apply mr-4 
+  @apply mr-2;
 }
-.title{
-    @apply text-gray-600 
+.logoTitle{
+  @apply flex items-center text-2xl text-slate-600 font-bold
 }
-.titleSpan{
-    @apply text-purple-900
+.logoTitleSpan{
+  @apply text-purple-800
 }
 // ---------------------- header logo end-------------------------
 
@@ -38,12 +39,15 @@
 .mainBlock {
   @apply mt-8 mb-40 bg-center bg-cover h-auto pb-14 flex justify-between rounded-2xl;
   background-image: url('../pages/components/img/main/mainBackground\ 1.png');
+  width: 1400px;
 }
+
 
 
 .mainInfoBlock{
   @apply  max-w-xl pt-40 ml-24;
 }
+
 
 .infoTitle{
   @apply font-bold text-5xl mb-14
@@ -194,12 +198,10 @@
 }
 
 //---------------------- Contact page-------------
-/* styles/App.module.scss */
 .contactPageBlock {
   @apply flex my-24 justify-between text-slate-600 text-lg font-bold;
 }
 
-.articleImg {}
 
 .aside {
   @apply w-5/12;
@@ -254,13 +256,12 @@
 
 .gamesPageBlock{
   width: 100vw;
-  height: 100vh;
   background-image: url('../pages/components/img/GamesCard/backgroundGamesPage.png');
-  @apply relative bg-cover h-auto;  
+  @apply relative bg-cover;  
 }
 
 .gamesCardArea{
-  @apply flex  pt-52 pl-72 pb-52;
+  @apply flex pt-52 pl-72 pb-52;
 }
 
 .areaCardsBlock{
@@ -374,14 +375,14 @@
 }
 
 .randomTitle{
-  @apply text-black text-xl;
+  @apply text-black text-3xl;
   font-family: "Caveat", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 .randomTitle2{
-  @apply my-2  text-black text-2xl
+  @apply my-2  text-black text-3xl
 }
 
 .randomUl{
@@ -428,7 +429,7 @@
 }
 
 .randomTitleSpan{
-  @apply mt-2
+  @apply mt-2 text-3xl;
 }
 
 // ---------- SpinSlider page ------------
@@ -442,8 +443,21 @@
 
     
 .swipersSliderTitle{
-  @apply flex relative  bg-cover w-5/12  pt-96  px-20  relative  text-3xl;
+  @apply flex relative  bg-cover w-7/12  pt-96  px-20  relative  text-3xl font-bold;
   // background-image: url('../pages/components/img/Random/oldPapirus.jpg');
   margin: 0 auto;
-  font-family: "Great Vibes", cursive;
+  font-family: "Caveat", cursive;
 }
+
+/* styles/App.module.scss */
+
+/* styles/App.module.scss */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jacquard+24+Charted&family=Noto+Sans+Elymaic&display=swap');
+.currentText {
+  @apply flex justify-center text-3xl  w-7/12 text-white;
+  margin: 0 auto;
+  font-family: "Caveat", cursive; 
+  font-optical-sizing: auto;
+}
+/* styles/App.module.scss */
+

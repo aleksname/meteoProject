@@ -3,12 +3,9 @@
 @tailwind utilities;
 
 body {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    background-color: rgb(204, 204, 204);
-    color: white;
-    overflow-x: hidden; 
+  @apply flex flex-col items-center  flex-wrap text-white;
+  background-color: rgb(204, 204, 204);
+  overflow-x: hidden;
 }
 
 

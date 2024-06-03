@@ -4,8 +4,5 @@
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
   "/Random": "pages/Random.js",
-  "/Spin": "pages/Spin.js",
-  "/Games": "pages/Games.js",
-  "/Weather": "pages/Weather.js",
-  "/Contact": "pages/Contact.js"
+  "/Spin": "pages/Spin.js"
 }
