@@ -5,7 +5,6 @@ import ContactImg from './components/img/ContactPage/contactSectionImg.png';
 import styles from '../styles/App.module.scss';
 import ContactPageInput from './components/ContactPageInput/ContactPageInput';
 import logoAside from './components/img/header/Logo.png';
-
 export default function Contact() {
   return (
     <>
