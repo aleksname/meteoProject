@@ -3,6 +3,8 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
+  "/Weather": "pages/Weather.js",
+  "/Games": "pages/Games.js",
   "/Random": "pages/Random.js",
   "/Spin": "pages/Spin.js",
   "/Contact": "pages/Contact.js"
