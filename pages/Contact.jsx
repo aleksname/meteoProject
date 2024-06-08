@@ -6,7 +6,7 @@ import styles from '../styles/App.module.scss';
 import ContactPageInput from './components/ContactPageInput/ContactPageInput';
 import logoAside from './components/img/header/Logo.png';
 
-export default function Contact({ titels }) {
+export default function Contact() {
   return (
     <>
       <MainContainter titels="Contact Page">

@@ -1,19 +1,20 @@
 // file: App.mpdule.scss
 .headerBlock{
-    @apply flex justify-center items-center mt-10;
+    @apply flex justify-center items-center mt-10 ;
 }
+
+
 .logoBlock{
-    @apply flex font-bold text-2xl 
-    bg-slate-300 rounded-lg py-2 px-4 shadow-2xl items-center mr-96   
+    @apply flex items-center mr-96 ;
 }
 .logo{
-    @apply mr-4 
+  @apply mr-2;
 }
-.title{
-    @apply text-gray-600 
+.logoTitle{
+  @apply flex items-center text-2xl text-slate-600 font-bold
 }
-.titleSpan{
-    @apply text-purple-900
+.logoTitleSpan{
+  @apply text-purple-800
 }
 // ---------------------- header logo end-------------------------
 
@@ -38,12 +39,15 @@
 .mainBlock {
   @apply mt-8 mb-40 bg-center bg-cover h-auto pb-14 flex justify-between rounded-2xl;
   background-image: url('../pages/components/img/main/mainBackground\ 1.png');
+  width: 1400px;
 }
+
 
 
 .mainInfoBlock{
   @apply  max-w-xl pt-40 ml-24;
 }
+
 
 .infoTitle{
   @apply font-bold text-5xl mb-14
@@ -194,12 +198,10 @@
 }
 
 //---------------------- Contact page-------------
-/* styles/App.module.scss */
 .contactPageBlock {
   @apply flex my-24 justify-between text-slate-600 text-lg font-bold;
 }
 
-.articleImg {}
 
 .aside {
   @apply w-5/12;
@@ -254,13 +256,12 @@
 
 .gamesPageBlock{
   width: 100vw;
-  height: 100vh;
   background-image: url('../pages/components/img/GamesCard/backgroundGamesPage.png');
-  @apply relative bg-cover h-auto;  
+  @apply relative bg-cover;  
 }
 
 .gamesCardArea{
-  @apply flex  pt-52 pl-72 pb-52;
+  @apply flex pt-52 pl-72 pb-52;
 }
 
 .areaCardsBlock{
@@ -374,14 +375,14 @@
 }
 
 .randomTitle{
-  @apply text-black text-xl;
+  @apply text-black text-3xl;
   font-family: "Caveat", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 .randomTitle2{
-  @apply my-2  text-black text-2xl
+  @apply my-2  text-black text-3xl
 }
 
 .randomUl{
@@ -428,7 +429,7 @@
 }
 
 .randomTitleSpan{
-  @apply mt-2
+  @apply mt-2 text-3xl;
 }
 
 // ---------- SpinSlider page ------------
@@ -442,8 +443,82 @@
 
     
 .swipersSliderTitle{
-  @apply flex relative  bg-cover w-5/12  pt-96  px-20  relative  text-3xl;
+  @apply flex relative  bg-cover w-7/12  pt-96  px-20  relative  text-3xl font-bold;
   // background-image: url('../pages/components/img/Random/oldPapirus.jpg');
   margin: 0 auto;
-  font-family: "Great Vibes", cursive;
+  font-family: "Caveat", cursive;
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jacquard+24+Charted&family=Noto+Sans+Elymaic&display=swap');
+.currentText {
+  @apply flex justify-center text-3xl  w-7/12 text-white;
+  margin: 0 auto;
+  font-family: "Caveat", cursive; 
+  font-optical-sizing: auto;
+}
+
+// --------- 
+.randomBlocks {
+  padding: 80px 0;
+  @apply flex justify-center 
+}
+
+.randomArea{
+  @apply mr-20
+}
+.round {
+  @apply flex items-center justify-center mb-2 bg-orange-600 overflow-hidden;
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  border: 10px solid rgb(142, 35, 122);
+  border-radius: 50%;
+  transition: transform 4s ease-out;
+}
+
+.roundUl {
+  @apply absolute w-full h-full; 
+}
+
+.roundLi {
+  position: absolute;
+  width: 58%;
+  height: 50%;
+  top: 0;
+  left: 50%;
+  transform-origin: 0% 100%;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.roundCenter{
+  @apply text-6xl font-bold  ;
+  z-index: 1;
+}
+.roundCenterSpan{
+  @apply text-slate-800
+}
+.roundLi:nth-child(1) { background: rgb(187, 138, 15); transform: rotate(-15deg); }
+.roundLi:nth-child(2) { background: #00f; transform: rotate(225deg); }
+.roundLi:nth-child(3) { background: #ff0; transform: rotate(45deg); }
+.roundLi:nth-child(4) { background: #f0f; transform: rotate(285deg); }
+.roundLi:nth-child(5) { background: rgb(111, 198, 111); transform: rotate(105deg); }
+.roundLi:nth-child(6) { background: rgb(114, 113, 113); transform: rotate(165deg); }
+
+.poundSpinBtn{
+  @apply flex font-bold text-5xl text-purple-900; 
+
+  &:hover{
+    @apply text-purple-600
+  }
+   &:active{
+    @apply text-purple-400
+  }
+  margin: 0 auto;
+}
+.roundArrowSpin{
+  @apply flex font-bold text-2xl text-white;
+  margin: 0 auto;
+}
+
+
